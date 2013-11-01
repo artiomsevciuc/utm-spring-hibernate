@@ -8,10 +8,11 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-
-	<jdbc:embedded-database id="dataSource" type="H2" />
-
 	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
 
 	<context:component-scan base-package="md.utm.springhibernate" />
 	

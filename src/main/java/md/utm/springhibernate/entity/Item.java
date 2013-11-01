@@ -1,4 +1,4 @@
-package md.utm.springhibernate;
+package md.utm.springhibernate.entity;
 
 
 import javax.persistence.Entity;
@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+
 
 /**
  * An item in an order
