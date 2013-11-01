@@ -4,6 +4,11 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+	<import resource="classpath:/META-INF/spring/dataSourceContext.xml" />
 	<import resource="classpath:/META-INF/spring/app-context.xml" />
+	
+	<bean id="orderPersistenceDao" class="md.utm.springhibernate.dao.OrderPersistenceDAO">
+		<property name="currentSessionFactory" ref="sessionFactory" />
+	</bean>
 
 </beans>

@@ -1,4 +1,4 @@
-package md.utm.springhibernate;
+package md.utm.springhibernate.entity;
 
 
 import java.util.Collection;
@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 
 
 /**
