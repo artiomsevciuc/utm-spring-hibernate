@@ -10,17 +10,21 @@
 	<bean id="juggler" class="md.utm.springidol.juggler.Juggler" />
 
 	<bean id="sonnet29" class="md.utm.springidol.juggler.Sonnet29" />
+	
 	<bean id="poeticJuggler" class="md.utm.springidol.juggler.PoeticJuggler">
 		<constructor-arg value="15" />
 		<constructor-arg ref="sonnet29" />
 	</bean>
+	
 	<bean id="kenny" class="md.utm.springidol.instrumental.Instrumentalist">
 		<property name="song" value="Jingle Bells" />
 		<property name="age" value="37" />
 	</bean>
+	
 	<bean id="kennyInstrument" class="md.utm.springidol.instrumental.Instrumentalist">
 		<property name="song" value="Jingle Bells" />
 		<property name="instrument" ref="saxophone" />
 	</bean>
+	
 	<bean id='saxophone' class="md.utm.springidol.instrumental.Saxophone" />
 </beans>
