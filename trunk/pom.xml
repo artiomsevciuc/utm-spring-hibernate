@@ -12,6 +12,7 @@
 	<description>
 		<![CDATA[This project is a minimal jar utility with Spring configuration for Hibernate.]]>
 	</description>
+	
 	<properties>
 		<maven.test.failure.ignore>true</maven.test.failure.ignore>
 		<spring.framework.version>3.0.6.RELEASE</spring.framework.version>
